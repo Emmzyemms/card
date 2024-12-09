@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+   /* - White (main heading, stats):   hsl(0, 0%, 100%)
+   - Slightly transparent white (main paragraph):  hsla(0, 0%, 100%, 0.75)
+   - Slightly transparent white (stat headings):  hsla(0, 0%, 100%, 0.6)
+
+   - Very dark blue (main background): hsl(233, 47%, 7%)
+   - Dark desaturated blue (card background): hsl(244, 38%, 16%)
+   - Soft violet (accent): hsl(277, 64%, 61%)
+
+   - Font size: 15px */
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    Font-size: 15px;
+    padding-left: 6rem;
+    overflow-x: hidden;
+
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    overflow: hidden;
+    margin: 150px -5rem 50px 5rem;
+    border-radius: 10px;
+      
+}
+
+
+h1 {
+    color:  hsl(0, 0%, 100%);
+    font-family: Lexend Deca;
+    margin: 5rem 5rem 0 3rem;
+    
+    
+   }
+
+ h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+ P {
+    font-family: inter;
+    margin: 2rem 5rem 0 3rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 14px;
+   
+}
+.main-text {
+    height: 100%;
+    width: 100%;
+    background-color: hsl(244, 38%, 16%);
+
+}
+
+.section {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -1.9rem;
+}
+
+.card-img {
+    height: 100%;
+    width: 100%;
+    color: hsl(277, 64%, 61%);
+   
+   
+}
+.mobile-img {
+    height: 100%;
+    width: 100%;
+    color: hsl(277, 64%, 61%);
+    display: none;
+}
+img {
+    border-radius: 0 10px 10px 0;
+}
+
+.section div{
+    color: hsla(0, 0%, 100%, 0.75);
+    text-transform: uppercase;
+    Font-size: 10px;
+    padding-bottom: 2rem;
+    font-family:  Lexend Deca;
+   
+}
+
+section div h2 {
+    text-transform: lowercase;
+    Font-size: 20px;
+    color: hsl(0, 0%, 100%);
+    font-family: inter;
+    
+}
+
+@media (max-width: 375px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+       
+
+    }
+
+    #main {
+       display: block;
+       margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 150px;
+       width: 100%;
+       height: 100%;
+        
+        
+    }
+    .mobile-img{
+        display: block;
+    }
+    .card-img{
+        display: none;
+    }
+
+    .main-text {
+       margin: 0;
+       width: 100%;
+       height: 100%;
+    }
+    h1 {
+        margin: 0;
+    }
+
+    .section {
+        margin: 30px 0 0 0;
+        display: block;
+        text-align: center;
+    }
+
+    
+    
+}
